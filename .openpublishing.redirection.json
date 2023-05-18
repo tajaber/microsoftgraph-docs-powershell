@@ -1107,7 +1107,7 @@
         },
         {
             "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Microsoft.Graph.Beta.Applications.yml",
-            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Microsoft.Graph.Applications?view=graph-powershell-1.0",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/?view=graph-powershell-1.0",
             "redirect_document_id": false
         },
         {
