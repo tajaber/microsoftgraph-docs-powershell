@@ -30,16 +30,16 @@
         "exclude": [
           "toc.yml" 
         ],
-        "src": "graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
+        "src": "graph-powershell-1.0-test",
+        "version": "graph-powershell-1.0-test",
         "dest": "module"
       },
       {
         "files": [
           "toc.yml"
         ],
-        "src": "graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
+        "src": "graph-powershell-1.0-test",
+        "version": "graph-powershell-1.0-test",
         "dest": "module/graph-powershell"
       },
       {
@@ -49,16 +49,16 @@
         "exclude": [
           "toc.yml" 
         ],
-        "src": "graph-powershell-beta",
-        "version": "graph-powershell-beta",
+        "src": "graph-powershell-beta-test",
+        "version": "graph-powershell-beta-test",
         "dest": "module"
       },
       {
         "files": [
           "toc.yml"
         ],
-        "src": "graph-powershell-beta",
-        "version": "graph-powershell-beta",
+        "src": "graph-powershell-beta-test",
+        "version": "graph-powershell-beta-test",
         "dest": "module/graph-powershell"
       },
       {
@@ -82,11 +82,11 @@
       }
     ],
     "versions": {
-      "graph-powershell-1.0": {
-        "dest": "graph-powershell-1.0"
+      "graph-powershell-1.0-test": {
+        "dest": "graph-powershell-1.0-test"
       },
-	  "graph-powershell-beta": {
-        "dest": "graph-powershell-beta"
+	  "graph-powershell-beta-test": {
+        "dest": "graph-powershell-beta-test"
       }
     },
     "overwrite": [],
@@ -105,7 +105,7 @@
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
-	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta"
+	  "docs-conceptual/**.*": "graph-powershell-1.0-test || graph-powershell-beta-test"
 	},
     "markdownEngineName": "markdig"
   }

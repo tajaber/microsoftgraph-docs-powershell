@@ -1,12 +1,12 @@
 {
-    "graph-powershell-1.0": {
-        "packageRoot": "graph-powershell-1.0",
+    "graph-powershell-1.0-test": {
+        "packageRoot": "graph-powershell-1.0-test",
         "conceptualToc": "docs-conceptual/toc.yml",
         "conceptualTocUrl": "/powershell/microsoftgraph/toc.json",
         "referenceTocUrl": "/powershell/module/graph-powershell/toc.json"
     },
-	"graph-powershell-beta": {
-        "packageRoot": "graph-powershell-beta",
+	"graph-powershell-beta-test": {
+        "packageRoot": "graph-powershell-beta-test",
         "conceptualToc": "docs-conceptual/toc.yml",
         "conceptualTocUrl": "/powershell/microsoftgraph/toc.json",
         "referenceTocUrl": "/powershell/module/graph-powershell/toc.json"
