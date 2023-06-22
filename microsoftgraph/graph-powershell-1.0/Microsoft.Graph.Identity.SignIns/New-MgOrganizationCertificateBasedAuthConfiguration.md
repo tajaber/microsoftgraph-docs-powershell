@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration
@@ -189,7 +189,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCertificateBasedAuthConfiguration>: certificateBasedAuthConfiguration
+BODYPARAMETER `<IMicrosoftGraphCertificateBasedAuthConfiguration>`: certificateBasedAuthConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]`: Collection of certificate authorities which creates a trusted certificate chain.
@@ -200,7 +200,7 @@ BODYPARAMETER <IMicrosoftGraphCertificateBasedAuthConfiguration>: certificateBas
     - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value. Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value. Read-only.
 
-CERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthority[]>: Collection of certificate authorities which creates a trusted certificate chain.
+CERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthority\[]>: Collection of certificate authorities which creates a trusted certificate chain.
   - `[Certificate <Byte[]>]`: Required. The base64 encoded string representing the public certificate.
   - `[CertificateRevocationListUrl <String>]`: The URL of the certificate revocation list.
   - `[DeltaCertificateRevocationListUrl <String>]`: The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.
@@ -208,7 +208,7 @@ CERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthority[]>: Collection of ce
   - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value. Read-only.
   - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value. Read-only.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
