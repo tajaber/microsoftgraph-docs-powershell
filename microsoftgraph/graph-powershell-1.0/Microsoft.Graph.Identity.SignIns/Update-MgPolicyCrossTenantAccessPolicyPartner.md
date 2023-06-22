@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartner
@@ -16,6 +16,7 @@ Update the navigation property partners in policies
 ```
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
  [-AdditionalProperties <Hashtable>]
+ [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
@@ -35,6 +36,7 @@ Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurat
 ```
 Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>]
+ [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
@@ -78,6 +80,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutomaticUserConsentSettings
+inboundOutboundPolicyConfiguration
+To construct, please use Get-Help -Online and see NOTES section for AUTOMATICUSERCONSENTSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInboundOutboundPolicyConfiguration
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -312,7 +330,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-B2BCOLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+AUTOMATICUSERCONSENTSETTINGS <IMicrosoftGraphInboundOutboundPolicyConfiguration>: inboundOutboundPolicyConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[InboundAllowed <Boolean?>]`: 
+  - `[OutboundAllowed <Boolean?>]`: 
+
+B2BCOLLABORATIONINBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -322,7 +345,7 @@ B2BCOLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: cr
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BCOLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+B2BCOLLABORATIONOUTBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -332,7 +355,7 @@ B2BCOLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+B2BDIRECTCONNECTINBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -342,7 +365,7 @@ B2BDIRECTCONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: cr
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+B2BDIRECTCONNECTOUTBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -352,8 +375,12 @@ B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: crossTenantAccessPolicyConfigurationPartner
+BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>: crossTenantAccessPolicyConfigurationPartner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[InboundAllowed <Boolean?>]`: 
+    - `[OutboundAllowed <Boolean?>]`: 
   - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
@@ -374,13 +401,13 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: cr
   - `[IsServiceProvider <Boolean?>]`: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
   - `[TenantId <String>]`: The tenant identifier for the partner Azure AD organization. Read-only. Key.
 
-INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
+INBOUNDTRUST <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
   - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
