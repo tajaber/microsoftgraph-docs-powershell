@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversionfield
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversionfield
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of the fields and values for this version of the list item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,8 +29,6 @@ Get-MgGroupDriveRootListItemVersionField -InputObject <IFilesIdentity> [-ExpandP
 
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,7 +79,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -140,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -167,3 +168,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
+

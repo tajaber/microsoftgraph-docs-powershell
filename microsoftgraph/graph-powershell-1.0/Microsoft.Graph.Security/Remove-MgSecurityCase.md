@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycase
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property cases for security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18,8 +21,6 @@ Remove-MgSecurityCase [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<Com
 
 ## DESCRIPTION
 Delete navigation property cases for security
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,3 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
+

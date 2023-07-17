@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,8 +22,6 @@ Get-MgEducationMeAssignmentDelta [-Filter <String>] [-Property <String[]>] [-Sea
 
 ## DESCRIPTION
 Invoke function delta
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -167,9 +168,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentDelta?view=graph-powershell-beta)
+

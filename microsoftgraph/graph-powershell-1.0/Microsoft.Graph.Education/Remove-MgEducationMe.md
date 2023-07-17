@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationme
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationme
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property me for education
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMe?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18,8 +21,6 @@ Remove-MgEducationMe [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<Comm
 
 ## DESCRIPTION
 Delete navigation property me for education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -97,3 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMe?view=graph-powershell-beta)
+

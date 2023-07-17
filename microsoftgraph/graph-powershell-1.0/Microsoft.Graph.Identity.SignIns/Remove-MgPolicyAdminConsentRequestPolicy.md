@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyadminconsentrequestpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property adminConsentRequestPolicy for policies
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,19 +22,6 @@ Remove-MgPolicyAdminConsentRequestPolicy [-IfMatch <String>] [-PassThru] [-WhatI
 
 ## DESCRIPTION
 Delete navigation property adminConsentRequestPolicy for policies
-
-## EXAMPLES
-
-### Example 1: Code snippet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyAdminConsentRequestPolicy
-```
-
-This example shows how to use the Remove-MgPolicyAdminConsentRequestPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -109,3 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+

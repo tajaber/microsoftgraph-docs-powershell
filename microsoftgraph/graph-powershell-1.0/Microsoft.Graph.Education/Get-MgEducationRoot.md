@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationroot
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get education
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18,8 +21,6 @@ Get-MgEducationRoot [-ExpandProperty <String[]>] [-Property <String[]>] [<Common
 
 ## DESCRIPTION
 Get education
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -60,9 +61,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRoot1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRoot
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationRoot?view=graph-powershell-beta)
+

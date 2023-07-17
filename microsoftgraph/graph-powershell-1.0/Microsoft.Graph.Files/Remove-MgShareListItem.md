@@ -1,26 +1,29 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharelistitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistitem
 schema: 2.0.0
 ---
 
 # Remove-MgShareListItem
 
 ## SYNOPSIS
-Delete navigation property items for shares
+Delete navigation property listItem for shares
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgShareListItem -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Delete
+### Delete1
 ```
-Remove-MgShareListItem -ListItemId <String> -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru]
+Remove-MgShareListItem -SharedDriveItemId <String> -ListItemId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,9 +40,7 @@ Remove-MgShareListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property items for shares
-
-## EXAMPLES
+Delete navigation property listItem for shares
 
 ## PARAMETERS
 
@@ -60,7 +61,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -79,7 +80,7 @@ The unique identifier of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -109,7 +110,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -168,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -195,3 +196,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItem?view=graph-powershell-beta)
+

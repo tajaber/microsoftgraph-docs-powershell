@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
 schema: 2.0.0
 ---
 
@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of pages in the section.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,8 +27,6 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 The collection of pages in the section.
 Read-only.
 Nullable.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,3 +224,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionPage?view=graph-powershell-beta)
+
