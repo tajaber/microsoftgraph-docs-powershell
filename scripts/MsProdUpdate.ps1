@@ -242,7 +242,6 @@ function WebScrapping {
     $LastExternalDocUrlPathSegmentWithoutQueryParam = $LastExternalDocUrlPathSegmentWithQueryParam.Split("?")[0]
 
     $GraphDocsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/api/$LastExternalDocUrlPathSegmentWithoutQueryParam.md"
-    $PermissionsReference = "[!INCLUDE [permissions-table](~/../graphref/api-reference/$GraphProfile/includes/permissions/$LastExternalDocUrlPathSegmentWithoutQueryParam.md)]"
     $MsprodContent = ""
     try{
         ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
@@ -271,24 +270,6 @@ function WebScrapping {
                 }
             }  | 
             Out-File $File
-        }
-        #Add permissions reference
-        if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## PARAMETERS') {
-            if((Get-Content -Raw -Path $File) -match $PermissionsReference){
-                Write-Host "`n$PermissionsReference already exists in $File"
-            }else{
-                if ((Get-Content -Raw -Path $File) -match '(## DESCRIPTION)[\s\S]*## EXAMPLES') {
-                    $Link = "$PermissionsReference`r`n`n## EXAMPLES"
-                    (Get-Content $File) | 
-                    Foreach-Object { $_ -replace '## EXAMPLES', $Link}  | 
-                    Out-File $File
-                }else{
-                    $Link = "$PermissionsReference`r`n`n## PARAMETERS"
-                    (Get-Content $File) | 
-                    Foreach-Object { $_ -replace '## PARAMETERS', $Link}  | 
-                    Out-File $File
-                }
-            }
         }
     }catch {
         Write-Host "`nError Message: " $_.Exception.Message
