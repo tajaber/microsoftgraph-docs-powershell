@@ -48,6 +48,8 @@ Update-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-update.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 ## DESCRIPTION
 Read properties and relationships of the managedAppOperation object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedappoperation-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedappoperation-list.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -47,6 +47,8 @@ Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-owners.md)]
+
 ## EXAMPLES
 ### Example 1: Add an owner for a service principal
 

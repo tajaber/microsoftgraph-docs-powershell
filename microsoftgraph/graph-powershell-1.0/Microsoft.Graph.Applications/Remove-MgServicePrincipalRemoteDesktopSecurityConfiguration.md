@@ -30,6 +30,8 @@ Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppli
 ## DESCRIPTION
 Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-remotedesktopsecurityconfiguration.md)]
+
 ## PARAMETERS
 
 ### -IfMatch

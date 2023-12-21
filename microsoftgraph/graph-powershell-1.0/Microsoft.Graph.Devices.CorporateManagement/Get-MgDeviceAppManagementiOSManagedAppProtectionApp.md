@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Read properties and relationships of the managedMobileApp object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedmobileapp-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedmobileapp-list.md)]
+
 ## PARAMETERS
 
 ### -All

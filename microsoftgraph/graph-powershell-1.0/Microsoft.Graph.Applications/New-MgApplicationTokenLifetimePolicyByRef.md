@@ -47,6 +47,8 @@ Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-tokenlifetimepolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -29,6 +29,8 @@ List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-tokenlifetimepolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

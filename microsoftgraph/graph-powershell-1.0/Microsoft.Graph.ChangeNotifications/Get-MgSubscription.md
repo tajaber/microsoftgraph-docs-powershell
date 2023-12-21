@@ -40,6 +40,10 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscription-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscription-list.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

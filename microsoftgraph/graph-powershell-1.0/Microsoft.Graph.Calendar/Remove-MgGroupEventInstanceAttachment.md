@@ -33,6 +33,8 @@ Remove-MgGroupEventInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch
 Delete an attachment from a user calendar event, mail message, or group post.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attachment-delete.md)]
+
 ## PARAMETERS
 
 ### -AttachmentId

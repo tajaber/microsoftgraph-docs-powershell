@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 Read properties and relationships of the iosVppEBook object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-managedebook-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-managedebook-list.md)]
+
 ## PARAMETERS
 
 ### -All

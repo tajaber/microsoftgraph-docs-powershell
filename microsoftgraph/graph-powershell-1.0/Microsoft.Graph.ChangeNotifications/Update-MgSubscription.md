@@ -61,6 +61,8 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscription-update.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

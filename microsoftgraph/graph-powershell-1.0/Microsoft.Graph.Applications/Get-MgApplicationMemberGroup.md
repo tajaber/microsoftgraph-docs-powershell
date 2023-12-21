@@ -55,6 +55,8 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getmembergroups.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

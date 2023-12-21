@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorpo
 ## DESCRIPTION
 Read properties and relationships of the defaultManagedAppProtection object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-defaultmanagedappprotection-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-defaultmanagedappprotection-list.md)]
+
 ## PARAMETERS
 
 ### -All

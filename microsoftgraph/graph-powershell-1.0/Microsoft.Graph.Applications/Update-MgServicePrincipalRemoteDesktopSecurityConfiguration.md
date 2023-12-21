@@ -44,6 +44,8 @@ Update-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppli
 ## DESCRIPTION
 Update the navigation property remoteDesktopSecurityConfiguration in servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-update.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

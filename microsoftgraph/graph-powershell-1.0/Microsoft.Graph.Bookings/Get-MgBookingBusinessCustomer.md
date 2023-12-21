@@ -41,6 +41,10 @@ Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty 
 Get the properties and relationships of a bookingCustomer object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-list-customers.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

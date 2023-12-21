@@ -45,6 +45,8 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 Add an owner to an application by posting to the owners collection.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-owners.md)]
+
 ## EXAMPLES
 ### Example 1: Add an owner to an application
 

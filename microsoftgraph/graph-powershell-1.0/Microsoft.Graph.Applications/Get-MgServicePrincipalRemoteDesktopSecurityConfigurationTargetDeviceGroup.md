@@ -37,6 +37,10 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -Input
 ## DESCRIPTION
 Get targetDeviceGroups from servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/targetdevicegroup-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-list-targetdevicegroups.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -79,6 +79,8 @@ Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-post-events.md)]
+
 ## EXAMPLES
 ### Example 1: Create an event in a specific calendar
 

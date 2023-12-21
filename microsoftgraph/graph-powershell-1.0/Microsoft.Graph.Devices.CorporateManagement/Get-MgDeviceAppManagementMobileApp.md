@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Read properties and relationships of the macOSMicrosoftEdgeApp object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-apps-mobilelobapp-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-apps-managediosstoreapp-list.md)]
+
 ## PARAMETERS
 
 ### -All

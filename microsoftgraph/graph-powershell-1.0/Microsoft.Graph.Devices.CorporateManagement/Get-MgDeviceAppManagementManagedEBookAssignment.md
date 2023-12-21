@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Read properties and relationships of the managedEBookAssignment object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-managedebookassignment-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-managedebookassignment-list.md)]
+
 ## PARAMETERS
 
 ### -All

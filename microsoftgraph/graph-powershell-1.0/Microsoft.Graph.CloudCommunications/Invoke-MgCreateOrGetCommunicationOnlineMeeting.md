@@ -38,6 +38,8 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-createorget.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

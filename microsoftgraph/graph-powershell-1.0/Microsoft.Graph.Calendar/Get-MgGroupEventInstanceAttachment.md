@@ -44,6 +44,8 @@ Navigation property.
 Read-only.
 Nullable.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-list-attachments.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

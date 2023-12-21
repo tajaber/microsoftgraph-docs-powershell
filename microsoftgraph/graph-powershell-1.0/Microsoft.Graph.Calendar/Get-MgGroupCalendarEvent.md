@@ -42,6 +42,8 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-events.md)]
+
 ## PARAMETERS
 
 ### -All

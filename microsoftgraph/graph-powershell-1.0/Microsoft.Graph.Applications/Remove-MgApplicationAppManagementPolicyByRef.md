@@ -35,6 +35,8 @@ Remove an appManagementPolicy policy object from an application or service princ
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-delete-appliesto.md)]
+
 ## PARAMETERS
 
 ### -ApplicationId

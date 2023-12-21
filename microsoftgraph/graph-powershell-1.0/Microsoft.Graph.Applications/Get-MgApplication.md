@@ -47,6 +47,10 @@ This API is available in the following national cloud deployments.
 
 View more [details on permissions](/graph/api/application-get#permissions).
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list.md)]
+
 ## EXAMPLES
 ### Example 1: Get a list of applications
 

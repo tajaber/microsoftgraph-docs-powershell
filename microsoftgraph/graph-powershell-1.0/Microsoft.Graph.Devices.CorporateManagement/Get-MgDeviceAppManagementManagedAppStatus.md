@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Read properties and relationships of the managedAppStatusRaw object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedappstatusraw-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedappstatusraw-list.md)]
+
 ## PARAMETERS
 
 ### -All

@@ -49,6 +49,8 @@ The application or service principal adopts this policy over the tenant-wide ten
 Only one policy object can be assigned to an application or service principal.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-appliesto.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

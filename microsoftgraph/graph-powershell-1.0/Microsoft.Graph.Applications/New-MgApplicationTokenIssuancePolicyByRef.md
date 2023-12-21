@@ -45,6 +45,8 @@ New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
 Assign a tokenIssuancePolicy to an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-tokenissuancepolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

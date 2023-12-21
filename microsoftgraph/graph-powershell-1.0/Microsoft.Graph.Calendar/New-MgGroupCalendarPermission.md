@@ -47,6 +47,8 @@ New-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-post-calendarpermissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

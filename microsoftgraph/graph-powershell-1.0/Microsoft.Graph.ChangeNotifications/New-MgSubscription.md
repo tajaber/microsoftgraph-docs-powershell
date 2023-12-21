@@ -42,6 +42,8 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscription-post-subscriptions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -33,6 +33,8 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-events.md)]
+
 ## EXAMPLES
 ### Example 1: Create an event in a specific calendar
 

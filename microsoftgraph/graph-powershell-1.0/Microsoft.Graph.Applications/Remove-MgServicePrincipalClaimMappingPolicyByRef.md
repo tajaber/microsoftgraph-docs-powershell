@@ -33,6 +33,8 @@ Remove-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIden
 Remove a claimsMappingPolicy from a servicePrincipal.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-claimsmappingpolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

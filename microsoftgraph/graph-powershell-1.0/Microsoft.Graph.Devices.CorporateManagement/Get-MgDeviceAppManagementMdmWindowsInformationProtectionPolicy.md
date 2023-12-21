@@ -41,6 +41,10 @@ Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 ## DESCRIPTION
 Read properties and relationships of the mdmWindowsInformationProtectionPolicy object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-mdmwindowsinformationprotectionpolicy-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-mdmwindowsinformationprotectionpolicy-list.md)]
+
 ## PARAMETERS
 
 ### -All

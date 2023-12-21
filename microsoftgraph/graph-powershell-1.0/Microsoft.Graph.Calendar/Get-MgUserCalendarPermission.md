@@ -57,6 +57,10 @@ Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String
 Get the specified permissions object of a user or group calendar that has been shared.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-calendarpermissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

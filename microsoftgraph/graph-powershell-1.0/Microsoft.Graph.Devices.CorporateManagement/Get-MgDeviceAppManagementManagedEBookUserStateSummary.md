@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorp
 ## DESCRIPTION
 Read properties and relationships of the userInstallStateSummary object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-userinstallstatesummary-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-userinstallstatesummary-list.md)]
+
 ## PARAMETERS
 
 ### -All

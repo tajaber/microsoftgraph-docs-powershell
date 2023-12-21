@@ -46,6 +46,8 @@ Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ## DESCRIPTION
 Update the navigation property targetDeviceGroups in servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/targetdevicegroup-update.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

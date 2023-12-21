@@ -32,6 +32,8 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedapppolicydeploymentsummary-get.md)]
+
 ## PARAMETERS
 
 ### -ExpandProperty

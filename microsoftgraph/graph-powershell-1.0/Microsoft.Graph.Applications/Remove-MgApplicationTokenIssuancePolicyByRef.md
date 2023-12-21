@@ -33,6 +33,8 @@ Remove-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity
 Remove a tokenIssuancePolicy from an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-tokenissuancepolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -27,6 +27,8 @@ Get-MgApplicationTokenIssuancePolicy -ApplicationId <String> [-ExpandProperty <S
 List the tokenIssuancePolicy objects that are assigned to an application.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-tokenissuancepolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

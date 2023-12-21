@@ -41,6 +41,10 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 Retrieve the properties and relationships of an audioRoutingGroup object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-list-audioroutinggroups.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

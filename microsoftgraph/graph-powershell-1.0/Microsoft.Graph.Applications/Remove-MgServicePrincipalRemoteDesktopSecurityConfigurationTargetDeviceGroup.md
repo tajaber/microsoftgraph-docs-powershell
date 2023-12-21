@@ -30,6 +30,8 @@ Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ## DESCRIPTION
 Delete navigation property targetDeviceGroups for servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md)]
+
 ## PARAMETERS
 
 ### -IfMatch

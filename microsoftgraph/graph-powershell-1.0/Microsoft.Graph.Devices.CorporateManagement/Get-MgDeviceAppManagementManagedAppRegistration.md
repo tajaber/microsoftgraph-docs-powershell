@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Read properties and relationships of the iosManagedAppRegistration object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-iosmanagedappregistration-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedappregistration-list.md)]
+
 ## PARAMETERS
 
 ### -All

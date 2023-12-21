@@ -27,6 +27,8 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-claimsmappingpolicies.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

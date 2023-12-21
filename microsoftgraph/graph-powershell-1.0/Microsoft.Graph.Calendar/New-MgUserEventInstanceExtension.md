@@ -49,6 +49,8 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/opentypeextension-post-opentypeextension.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

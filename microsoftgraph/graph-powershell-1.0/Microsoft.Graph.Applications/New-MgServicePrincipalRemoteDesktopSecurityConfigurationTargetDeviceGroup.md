@@ -44,6 +44,8 @@ New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -Input
 ## DESCRIPTION
 Create new navigation property to targetDeviceGroups for servicePrincipals
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/remotedesktopsecurityconfiguration-post-targetdevicegroups.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties

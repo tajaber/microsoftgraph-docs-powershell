@@ -23,6 +23,8 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<
 ## DESCRIPTION
 Read properties and relationships of the deviceAppManagement object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-onboarding-deviceappmanagement-get.md)]
+
 ## PARAMETERS
 
 ### -ExpandProperty

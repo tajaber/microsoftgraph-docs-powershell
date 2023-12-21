@@ -31,6 +31,8 @@ Get-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Read properties and relationships of the eBookInstallSummary object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-books-ebookinstallsummary-get.md)]
+
 ## PARAMETERS
 
 ### -ExpandProperty

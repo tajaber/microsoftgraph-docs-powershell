@@ -39,6 +39,10 @@ Get-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Read properties and relationships of the targetedManagedAppProtection object.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-managedapppolicy-get.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/intune-mam-targetedmanagedappprotection-list.md)]
+
 ## PARAMETERS
 
 ### -All

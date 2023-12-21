@@ -33,6 +33,8 @@ Get the properties and relationships of a calendar object.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar: This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-get.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

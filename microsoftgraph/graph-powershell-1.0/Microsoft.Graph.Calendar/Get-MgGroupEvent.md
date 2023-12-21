@@ -38,6 +38,10 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Commo
 Get an event object.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-event.md)]
+
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-events.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -54,6 +54,8 @@ App roles that are assigned to service principals are also known as application 
 Application permissions can be granted directly with app role assignments, or through a consent experience.
 To grant an app role assignment to a client service principal, you need three identifiers: This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-approleassignments.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

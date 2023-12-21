@@ -45,6 +45,8 @@ New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentit
 Assign a claimsMappingPolicy to a servicePrincipal.
 This API is available in the following national cloud deployments.
 
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-claimsmappingpolicies.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
