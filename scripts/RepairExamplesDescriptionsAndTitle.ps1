@@ -20,6 +20,7 @@ function Start-Copy {
             $GraphProfile = $_.ApiVersion
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
+                $ModulePrefix = "Microsoft.Graph.Beta"
             }
             $docs = Join-Path $SDKDocsPath $ModuleName.Replace("Beta.", "") $GraphProfile "examples"
             try {
@@ -225,8 +226,5 @@ function Remove-WrongExamples {
 
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy
-git config --global user.email "GraphTooling@service.microsoft.com"
-git config --global user.name "Microsoft Graph DevX Tooling"
-git add ../
-git commit -m "Rectified examples and descriptions" 
+
 Write-Host -ForegroundColor Green "-------------Done-------------"
