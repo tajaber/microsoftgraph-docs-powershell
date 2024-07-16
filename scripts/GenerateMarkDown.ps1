@@ -55,7 +55,7 @@ function Generate-GraphHelp {
     }
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
-    git add .
+    git add ../
     git commit -m "Updated markdown help" 
 }
 

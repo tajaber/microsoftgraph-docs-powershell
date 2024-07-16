@@ -25,7 +25,7 @@ function EscapeDisallowedHtmlTags {
     
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
-    git add .
+    git add ../
     git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile {
