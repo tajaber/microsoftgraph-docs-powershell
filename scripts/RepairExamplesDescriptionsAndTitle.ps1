@@ -67,16 +67,17 @@ function Copy-Files {
                 
                 if (!(Test-Path $DestinationFile)) {
                     Write-Host "File does not exist $DestinationFile"
-                    continue
-                }
-                if ($EmptyFile) {
-                    Write-Host "File is empty $DocPath"
-                    #For removing existing wrong examples and descriptions
-                    Remove-WrongExamples -File $DestinationFile
-                }
-                else {
-                    $Content = Get-Content -Path $DocPath
-                    Import-Descriptions -Content $Content -File $DestinationFile
+                
+                }else{
+                    if ($EmptyFile) {
+                        Write-Host "File is empty $DocPath"
+                        #For removing existing wrong examples and descriptions
+                        Remove-WrongExamples -File $DestinationFile
+                    }
+                    else {
+                        $Content = Get-Content -Path $DocPath
+                        Import-Descriptions -Content $Content -File $DestinationFile
+                    }
                 }
             }
     
