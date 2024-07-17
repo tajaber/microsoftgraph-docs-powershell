@@ -9,7 +9,7 @@ Param(
 
 function Start-Copy {
 
-    $GraphProfilePath = "graph-powershell-1.0"
+    
     $ModulePrefix = "Microsoft.Graph"
 
 
@@ -19,12 +19,13 @@ function Start-Copy {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
             $Command = $_.Command
+            $GraphProfilePath = "graph-powershell-1.0"
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
                 $ModulePrefix = "Microsoft.Graph.Beta"
                 $ModuleName = $ModuleName.Replace("Beta.", "")
             }
-            $DocPath = Join-Path $SDKDocsPath $ModulePrefix $GraphProfile "examples" $Command
+            $DocPath = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples" "$Command.md"
             try {
                 Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
             }
@@ -33,10 +34,10 @@ function Start-Copy {
             }
         
         }
-        git config --global user.email "GraphTooling@service.microsoft.com"
-        git config --global user.name "Microsoft Graph DevX Tooling"
-        git add .
-        git commit -m "Repaired examples and descriptions" 
+        # git config --global user.email "GraphTooling@service.microsoft.com"
+        # git config --global user.name "Microsoft Graph DevX Tooling"
+        # git add .
+        # git commit -m "Repaired examples and descriptions" 
 
     }
     
@@ -58,8 +59,8 @@ function Copy-Files {
     )
     try {
         $Path = "$ModulePrefix.$ModuleName"
-        $DestinationFile = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path $Command
-
+        $DestinationFile = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
+        Write-Host "Copying files from $DocPath to $DestinationFile"
         if ((Test-Path $DocPath)) {
                 # Read the content of the file searching for example headers.
                 $EmptyFile = Test-FileEmpty $DocPath
