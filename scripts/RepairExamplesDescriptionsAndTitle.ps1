@@ -34,10 +34,10 @@ function Start-Copy {
             }
         
         }
-        # git config --global user.email "GraphTooling@service.microsoft.com"
-        # git config --global user.name "Microsoft Graph DevX Tooling"
-        # git add .
-        # git commit -m "Repaired examples and descriptions" 
+        git config --global user.email "GraphTooling@service.microsoft.com"
+        git config --global user.name "Microsoft Graph DevX Tooling"
+        git add .
+        git commit -m "Repaired examples and descriptions" 
 
     }
     
