@@ -18,14 +18,15 @@ function Start-Copy {
         $CommandMetadataContent | ForEach-Object {
             $ModuleName = $_.Module
             $GraphProfile = $_.ApiVersion
+            $Command = $_.Command
             if($GraphProfile -eq "beta") {
                 $GraphProfilePath = "graph-powershell-beta"
                 $ModulePrefix = "Microsoft.Graph.Beta"
                 $ModuleName = $ModuleName.Replace("Beta.", "")
             }
-            $docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
+            $DocPath = Join-Path $SDKDocsPath $ModulePrefix $GraphProfile "examples" $Command
             try {
-                Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+                Copy-Files -DocPath $DocPath -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile -Command $Command
             }
             catch {
                 Write-Host "Failed to copy files for module $ModuleName" 
@@ -51,37 +52,32 @@ function Copy-Files {
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [ValidateNotNullOrEmpty()]
-        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\examples"
+        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\examples\Get-MgUser.md",
+        [ValidateNotNullOrEmpty()]
+        [string] $Command = "Get-MgUser"
     )
     try {
         $Path = "$ModulePrefix.$ModuleName"
-        $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+        $DestinationFile = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path $Command
 
         if ((Test-Path $DocPath)) {
-       
-            foreach ($File in Get-ChildItem $DocPath) {
                 # Read the content of the file searching for example headers.
-                $EmptyFile = Test-FileEmpty $File
-                $Command = [System.IO.Path]::GetFileName($File)
+                $EmptyFile = Test-FileEmpty $DocPath
                 
-                $DestinationFile = Join-Path $Destination $Command
                 if (!(Test-Path $DestinationFile)) {
                     Write-Host "File does not exist $DestinationFile"
                     continue
                 }
                 if ($EmptyFile) {
-                    Write-Host "File is empty $File"
+                    Write-Host "File is empty $DocPath"
                     #For removing existing wrong examples and descriptions
                     Remove-WrongExamples -File $DestinationFile
                 }
                 else {
-                    $Content = Get-Content -Path $File
+                    $Content = Get-Content -Path $DocPath
                     Import-Descriptions -Content $Content -File $DestinationFile
                 }
             }
-            
- 
-        } 
     
     }
     catch {
